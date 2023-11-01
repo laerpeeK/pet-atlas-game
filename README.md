@@ -14,5 +14,5 @@ pc/移动端游戏地址: https://laerpeek.top:12000
 
 
 ## 游戏说明
-[说明](https://github.com/laerpeeK/pet-atlas-2-game/blob/main/1.png)
-[赞赏](https://github.com/laerpeeK/pet-atlas-2-game/blob/main/2.png)
+![说明](https://github.com/laerpeeK/pet-atlas-2-game/blob/main/1.png)
+![赞赏](https://github.com/laerpeeK/pet-atlas-2-game/blob/main/2.png)
