@@ -2,7 +2,7 @@
 
 ## 游戏地址
 
-pc/移动端均可体验: https://laerpeek.top:12000  
+PC/移动端均可体验: https://laerpeek.top:12000  
 游客账号：test01 密码：123456
 
 ## 游戏内容介绍
