@@ -26,6 +26,10 @@
 游戏内容更新优化建议：游戏玩家  
 游戏内容更新优化实现：独立完成(技术实现+基于个人对于休闲、宠物养成、回合制战斗游戏的理解)
 
+dai'ma
+
+
+
 ## 关于开源
 
 1. 环境浮躁，当你把一款游戏产品开源后，只会产生各种粗制滥造的，为了爽感而简单拷贝修改的游戏私服。
@@ -35,4 +39,4 @@
 
 ## 赞助方式
 
-![赞赏](https://github.com/laerpeeK/pet-atlas-2-game/blob/main/2.png)
+![赞赏](https://github.com/laerpeeK/pet-atlas-2-game/blob/main/2.jpg)
