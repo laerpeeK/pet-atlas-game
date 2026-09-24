@@ -1,0 +1,222 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="description" content="超可爱宠物养成RPG游戏《口袋精灵2》 单机免费版"/><meta name="keywords" content="口袋精灵2, 寒江雪, 网页游戏, 单机, 免费"/><meta name="author" content="Zhijie Fang"/><meta name="generator" content="Vue"/><meta property="og:title" content="口袋精灵2 | 免费单机游戏"/><meta property="og:type" content="website"/><meta property="og:url" content="http://127.0.0.1:12000"/><meta property="og:image" content="http://127.0.0.1:12000/ogimage.png"/><meta property="og:image:width" content="190"/><meta property="og:image:height" content="255"/><meta property="og:description" content="超可爱宠物养成RPG游戏《口袋精灵2》 单机免费版"/><meta property="og:site_name" content="口袋精灵2 | 免费单机游戏"/><meta property="og:locale" content="zh_CN"/><link rel="icon" href="/favicon.ico"/><title>游戏资源加载中...</title><style>body {
+        font-size: 12px;
+        font-weight: normal;
+        font-family: '宋体', 'Microsoft Yahei', '微软雅黑', 'sans-serif';
+        background-color: #010409;
+        overflow: hidden;
+      }
+
+      body {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+
+      a:focus,
+      input:focus,
+      p:focus,
+      div:focus {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+
+      /* 禁止普通元素的文本选择 */
+      body {
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE/Edge */
+        user-select: none; /* 标准语法 */
+      }
+
+      /* 允许输入框、文本域、可编辑元素选中 */
+      a,
+      input,
+      textarea,
+      [contenteditable='true'] {
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        user-select: text;
+      }
+
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      button {
+        margin: 0;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        line-height: 1;
+        outline-color: #f19202;
+        outline-width: 1px;
+      }
+
+      .chromeframe {
+        margin: 0.2em 0;
+        background: #ccc;
+        color: #000;
+        padding: 0.2em 0;
+      }
+
+      #loader-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999999;
+      }
+
+      #loader {
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 150px;
+        height: 150px;
+        margin: -75px 0 0 -75px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #fff;
+        -webkit-animation: spin 2s linear infinite;
+        -ms-animation: spin 2s linear infinite;
+        -moz-animation: spin 2s linear infinite;
+        -o-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+        z-index: 1001;
+      }
+
+      #loader:before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #fff;
+        -webkit-animation: spin 3s linear infinite;
+        -moz-animation: spin 3s linear infinite;
+        -o-animation: spin 3s linear infinite;
+        -ms-animation: spin 3s linear infinite;
+        animation: spin 3s linear infinite;
+      }
+
+      #loader:after {
+        content: '';
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #fff;
+        -moz-animation: spin 1.5s linear infinite;
+        -o-animation: spin 1.5s linear infinite;
+        -ms-animation: spin 1.5s linear infinite;
+        -webkit-animation: spin 1.5s linear infinite;
+        animation: spin 1.5s linear infinite;
+      }
+
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+
+        100% {
+          -webkit-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+
+        100% {
+          -webkit-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+      #loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        background: #010409;
+        z-index: 1000;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+      }
+
+      #loader-wrapper .loader-section.section-left {
+        left: 0;
+      }
+
+      #loader-wrapper .loader-section.section-right {
+        right: 0;
+      }
+
+      .loaded #loader-wrapper .loader-section.section-left {
+        -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        transform: translateX(-100%);
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+
+      .loaded #loader-wrapper .loader-section.section-right {
+        -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        transform: translateX(100%);
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+
+      .loaded #loader {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+      }
+
+      .loaded #loader-wrapper {
+        visibility: hidden;
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+        -webkit-transition: all 0.3s 1s ease-out;
+        transition: all 0.3s 1s ease-out;
+      }</style><script defer="defer" src="/js/chunk-vendors.953709f0.js"></script><script defer="defer" src="/js/index.a7d3c88c.js"></script><link href="/css/index.14d9ef12.css" rel="stylesheet"></head><body><script>!(function (x, n) {
+        window[n] = window[n] || {}
+        window[n].config = {
+          domain: 'https://apm-web.cn-north-4.myhuaweicloud.com',
+          appId: '4ae39e05ce2349189f946ebcdbd59ae5',
+          apiRepo: true,
+          thirdApi: true,
+          hashMode: true,
+          JsErrClean: true,
+          smartJsErr: true,
+          webResource: true,
+          traceType: 'apm'
+        }
+        var o = document.createElement('script')
+        ;(o.src = x), (o.async = !0)
+        var d = document.body.firstChild
+        document.body.insertBefore(o, d)
+      })('https://res.hc-cdn.com/js-agent-cdn/1.0.52/jsagent.min.js', '__fr')</script><noscript><strong>We're sorry but 口袋精灵2 | 免费单机游戏 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"><div id="loader-wrapper"><div id="loader"></div><div class="loader-section section-left"></div><div class="loader-section section-right"></div></div></div></body></html>
