@@ -21,7 +21,3 @@
 ## 游戏内容介绍
 
 ![说明](https://github.com/laerpeeK/pet-atlas-2-game/blob/main/1.png)
-
-## 赞助方式
-
-![赞赏](https://github.com/laerpeeK/pet-atlas-2-game/blob/main/2.jpg)
